@@ -2,18 +2,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
     
-    <Button 
-        android:id="@+id/show_location"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-    	android:text="@string/show_location"
-    	android:onClick="showLocation" />
+        android:orientation="horizontal"
+        style="?android:attr/buttonBarStyle" >
+        
+	    <Button 
+	        android:id="@+id/store_location"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        style="?android:attr/buttonBarButtonStyle"
+	    	android:text="@string/store_location"
+	    	android:textColor="@color/purple"
+        	android:textSize="25sp"
+        	android:textStyle="bold"
+	    	android:onClick="storeLocation" />
+	    
+	    <Button 
+	        android:id="@+id/read_location"
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        style="?android:attr/buttonBarButtonStyle"
+	    	android:text="@string/read_location"
+	    	android:textColor="@color/purple"
+        	android:textSize="25sp"
+        	android:textStyle="bold"
+	    	android:onClick="readLocation" />
+	    
+	</LinearLayout>
     
     <fragment
           android:id="@+id/map"

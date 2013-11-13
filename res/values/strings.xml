@@ -3,7 +3,7 @@
 
     <string name="app_name">Where is My Car?</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="show_location">Show Location</string>
+    <string name="store_location">Remember where it is!</string>
+    <string name="read_location">Dude, where\'s the car?</string>
 
 </resources>
